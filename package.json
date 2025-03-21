@@ -1,0 +1,43 @@
+{
+  "name": "core-session",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsoa routes && ts-node server.ts",
+    "dev": "rmdir build /s/q && tsoa routes && nodemon server.ts",
+    "build": "tsoa routes && tsc",
+    "lint": "eslint src/**/*.ts",
+    "routes": "tsoa routes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "inversify": "^7.1.0",
+    "inversify-binding-decorators": "^4.0.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.12.1",
+    "nodemon": "^3.1.9",
+    "reflect-metadata": "^0.2.2",
+    "tsoa": "^6.6.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.10",
+    "@typescript-eslint/eslint-plugin": "^8.27.0",
+    "@typescript-eslint/parser": "^8.27.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "globals": "^16.0.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.27.0"
+  }
+}
